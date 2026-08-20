@@ -1,0 +1,23 @@
+# Local Development Instructions
+
+## Local Environment
+
+Backend URL:
+
+http://localhost:5000
+
+Frontend URL:
+
+http://localhost:5173
+
+## Local Database
+
+Use configuration from local environment variables.
+
+Do not commit database credentials.
+
+## Local AWS
+
+Use the configured AWS profile.
+
+Do not store AWS access keys in this repository.
