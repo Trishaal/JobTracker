@@ -420,3 +420,37 @@ The README should include:
 - Link to the GitHub Wiki.
 
 Detailed technical documentation belongs in the GitHub Wiki.
+
+## Feature Roadmap and Progress
+
+The GitHub Wiki page named `Features` is the source of truth for feature implementation progress.
+
+The Features page contains:
+
+- The ordered feature roadmap.
+- Feature status.
+- The current next feature.
+- Concise completion notes.
+
+When asked to:
+
+- implement the next feature
+- continue development
+- work on the next task
+- continue the project
+
+Claude must:
+
+1. Read only the GitHub Wiki `Features` page.
+2. Identify the `Current Next Feature`.
+3. Implement only that feature.
+4. Do not skip ahead unless explicitly instructed.
+5. Add or update relevant tests.
+6. Run relevant validation.
+7. Mark the completed feature as complete in the GitHub Wiki.
+8. Update `Current Next Feature`.
+9. Create or update other relevant GitHub Wiki documentation if required.
+
+Do not scan the entire repository or GitHub Wiki to determine what feature should be implemented.
+
+Do not implement multiple roadmap features unless explicitly requested.
