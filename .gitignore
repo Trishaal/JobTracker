@@ -1,0 +1,80 @@
+# ==============================
+# .NET
+# ==============================
+
+bin/
+obj/
+.vs/
+.vscode/
+
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Test results
+TestResults/
+coverage/
+*.trx
+
+# ==============================
+# Node / React
+# ==============================
+
+node_modules/
+dist/
+build/
+.vite/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==============================
+# Environment / Secrets
+# ==============================
+
+.env
+.env.*
+!.env.example
+
+# Local ASP.NET configuration
+appsettings.Local.json
+appsettings.*.Local.json
+
+# ==============================
+# Claude
+# ==============================
+
+CLAUDE.local.md
+
+# ==============================
+# Terraform
+# ==============================
+
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+*.tfvars
+*.tfvars.json
+
+# Allow safe example configuration
+!*.tfvars.example
+
+# ==============================
+# OS
+# ==============================
+
+.DS_Store
+Thumbs.db
+
+# ==============================
+# IDE
+# ==============================
+
+.idea/
+*.swp
+*.swo

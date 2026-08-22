@@ -1,0 +1,29 @@
+# Detect text files automatically
+* text=auto
+
+# Source files
+*.cs text
+*.csproj text
+*.sln text
+*.json text
+*.yml text
+*.yaml text
+*.md text
+*.ts text
+*.tsx text
+*.js text
+*.jsx text
+*.css text
+*.html text
+
+# Terraform
+*.tf text
+*.tfvars text
+
+# Never modify binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
