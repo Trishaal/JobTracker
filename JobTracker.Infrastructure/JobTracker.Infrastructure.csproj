@@ -1,7 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.10" />
     <ProjectReference Include="..\JobTracker.Domain\JobTracker.Domain.csproj" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.10" />
+    <!-- For PostgreSQL, we would use Npgsql.EntityFrameworkCore.PostgreSQL, but for now we use the base package -->
   </ItemGroup>
 
   <PropertyGroup>
