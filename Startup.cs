@@ -26,8 +26,15 @@ namespace JobTracker.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddControllers();
+
+            // Register DbContext
+            services.AddDbContext<JobTrackerDbContext>(options =>
+                options.UseInMemoryDatabase("JobTrackerDb"));
+
+            // Register application services
+            services.AddScoped<IJobApplicationService, JobTracker.Application.Services.JobApplicationService>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "JobTracker.Api", Version = "v1" });

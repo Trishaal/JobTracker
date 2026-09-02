@@ -4,4 +4,9 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\JobTracker.Domain\JobTracker.Domain.csproj" />
+    <ProjectReference Include="..\JobTracker.Infrastructure\JobTracker.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
