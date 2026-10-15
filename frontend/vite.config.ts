@@ -7,6 +7,8 @@ export default defineConfig({
   server: {
     port: 3000,
     strictPort: true,
+    // In Base44 preview mode, allow the sandbox proxy host
+    ...(process.env.BASE44_PREVIEW_MODE === '1' ? { allowedHosts: true } : {}),
   },
   preview: {
     port: 3000,

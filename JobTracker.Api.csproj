@@ -11,8 +11,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="JobTracker.Application.csproj" />
-    <ProjectReference Include="JobTracker.Infrastructure.csproj" />
+    <ProjectReference Include="JobTracker.Application/JobTracker.Application.csproj" />
+    <ProjectReference Include="JobTracker.Infrastructure/JobTracker.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <!-- Exclude source files that belong to subdirectory projects to avoid duplicate compilation -->
+  <ItemGroup>
+    <Compile Remove="JobTracker.Api/**" />
+    <Compile Remove="JobTracker.Application/**" />
+    <Compile Remove="JobTracker.Domain/**" />
+    <Compile Remove="JobTracker.Infrastructure/**" />
   </ItemGroup>
 
 </Project>
